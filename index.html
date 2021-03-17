@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="sass/main.scss"> <!--Fichier css compilé-->
+  <link rel="stylesheet" href="css/style.css"> <!--Fichier css compilé-->
   
   <!-- Primary Meta Tags -->
   <title>Accueil - ohmyfood!</title>
@@ -14,13 +14,13 @@
 <body>
 
   <header class="header">
-    <img class="header__logo" src="img/logo/ohmyfood.png" alt="logo ohmyfood"/>
+      <h1>Ohmyfood</h1>
   </header>
 
   <main>
     <section class="local">
       <i class="fas fa-map-marker-alt local__icon"></i>
-      <span class="local__text">Paris, Belleville</span>
+      <h2 class="local__text">Paris, Belleville</h2>
     </section>
 
     <section class="intro">
@@ -28,29 +28,27 @@
       <p class="intro__subtitle">
         Découvrez des restaurants d'exception, séléctionnés par nos soins
       </p>
-      <a class="intro__btn">
+      <a class="intro__btn" href="#">
         Explorer nos restaurants
       </a>
     </section>
 
     <section class="tuto">
-      <div class="container">
         <h2 class="tuto__title">Fonctionnement</h2>
         <ol class="tuto__steps">
-          <li class="tuto__step">
-            <i class="tuto__icon fas fa-mobile-alt"></i>
-            <span class="text">Choisissez un restaurant</span>
+          <li>
+            <i class="fas fa-mobile-alt"></i>
+            <span>Choisissez un restaurant</span>
           </li>
-          <li class="tuto__step">
-            <i class="tuto__icon fas fa-list-ul"></i>
-            <span class="text">Composez votre menu</span>
+          <li>
+            <i class="fas fa-list-ul"></i>
+            <span>Composez votre menu</span>
           </li>
-          <li class="tuto__step">
-            <i class="tuto__icon fas fa-store"></i>
-            <span class="text">Dégustez au restaurant</span>
+          <li>
+            <i class="fas fa-store"></i>
+            <span>Dégustez au restaurant</span>
           </li>
         </ol>
-      </div>
     </section>
 
     <section class="restaurants" id="restaurants">
@@ -65,10 +63,9 @@
                 <span class="card__badge">Nouveau</span>
               </figure>
               <div class="card__content">
-                  <h3 class="card__title">La palette du goût</h3>
+                  <h3 class="">La palette du goût</h3>
                   <span class="card__subtitle">Ménilmontant</span>
-                  <div class="menu__btn card__btn">
-                  <i class="card__like menu__like far fa-heart fa-2x"></i>
+                  <i class="far fa-heart fa-2x"></i>
               </div>
             </article>
           </a>
@@ -80,10 +77,9 @@
                 <span class="card__badge">Nouveau</span>
               </figure>
               <div class="card__content">
-                  <h3 class="card__title">La palette du goût</h3>
+                  <h3 class="">La palette du goût</h3>
                   <span class="card__subtitle">Ménilmontant</span>
-                  <div class="menu__btn card__btn">
-                  <i class="card__like menu__like far fa-heart fa-2x"></i>
+                  <i class="far fa-heart fa-2x"></i>
               </div>
             </article>
           </a>
@@ -95,10 +91,9 @@
                 <span class="card__badge">Nouveau</span>
               </figure>
               <div class="card__content">
-                  <h3 class="card__title">La palette du goût</h3>
+                  <h3 class="">La palette du goût</h3>
                   <span class="card__subtitle">Ménilmontant</span>
-                  <div class="menu__btn card__btn">
-                  <i class="card__like menu__like far fa-heart fa-2x"></i>
+                  <i class="far fa-heart fa-2x"></i>
               </div>
             </article>
           </a>
@@ -110,10 +105,9 @@
                 <span class="card__badge">Nouveau</span>
               </figure>
               <div class="card__content">
-                  <h3 class="card__title">La palette du goût</h3>
+                  <h3 class="">La palette du goût</h3>
                   <span class="card__subtitle">Ménilmontant</span>
-                  <div class="menu__btn card__btn">
-                  <i class="card__like menu__like far fa-heart fa-2x"></i>
+                  <i class="far fa-heart fa-2x"></i>
               </div>
             </article>
           </a>
@@ -127,17 +121,18 @@
       <span class="footer__logo">ohmyfood</span>
       <nav>
         <ul class="footer__list">
-          <li class="footer__listElt">
-            <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
+          <li>
+            <a href="#">
+              <i class="fas fa-utensils"></i>Proposer un restaurant</a>
           </li>
-          <li class="footer__listElt">
-            <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
+          <li>
+            <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
           </li>
-          <li class="footer__listElt">
-            <a class="footer__link" href="#">Mentions légales</a>
+          <li>
+            <a href="#">Mentions légales</a>
           </li>
-          <li class="footer__listElt">
-            <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
+          <li>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
           </li>
         </ul>
       </nav>
