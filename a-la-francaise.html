@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   
   <!-- Primary Meta Tags -->
   <title>Restaurant "A la française" - ohmyfood!</title>
@@ -12,7 +15,7 @@
 
 </head>
 <body>
-  <header class="header header--withBackArrow">
+  <header class="header">
     <div class="restaurantContainer">
       <a href="index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
       <h1>Ohmyfood</h1>
@@ -21,7 +24,7 @@
 
   <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française" class="introImg">
 
-  <main class="menu container">
+  <main class="menu">
     <header class="menu__header">
       <h2 class="menu__title">A la française</h2>
       <i class="menu__like far fa-heart fa-2x"></i>
@@ -31,22 +34,28 @@
       <section class="step">
         <h3>Entrées</h3>
         <article class="item delay-0">
-          <h4 class="item__title">Tartare de poulpe acidulé</h4>
-          <p class="item__description">Aux zests d'orange</p>
+          <header> 
+            <h4 class="item__title">Tartare de poulpe acidulé</h4>
+            <p class="item__description">Aux zests d'orange</p>
+          </header> 
           <span class="item__price">25€</span>
           <i class="fas fa-check"></i>
         </article>
         
         <article class="item delay-1">
-          <h4 class="item__title">Velouté de légumes d'antan</h4>
-          <p class="item__description">Carotte, panais, topinambour</p>
+          <header> 
+            <h4 class="item__title">Velouté de légumes d'antan</h4>
+            <p class="item__description">Carotte, panais, topinambour</p>
+          </header> 
           <span class="item__price">35€</span>
           <i class="fas fa-check"></i>
         </article>
   
         <article class="item delay-2">
-          <h4 class="item__title">Soupe à l'oignon</h4>
-          <p class="item__description">Revisité</p>
+          <header> 
+            <h4 class="item__title">Soupe à l'oignon</h4>
+            <p class="item__description">Revisité</p>
+          </header> 
           <span class="item__price">20€</span>
           <i class="fas fa-check"></i>
         </article>
@@ -55,22 +64,28 @@
       <section class="step">
         <h3>Plats</h3>
         <article class="item delay-3">
-          <h4 class="item__title">Coquilles Saint-Jacques</h4>
-          <p class="item__description">Accompagné d'une purée de panais</p>
+          <header> 
+            <h4 class="item__title">Coquilles Saint-Jacques</h4>
+            <p class="item__description">Accompagné d'une purée de panais</p>
+          </header> 
           <span class="item__price">40€</span>
           <i class="fas fa-check"></i>
         </article>
         
         <article class="item delay-4">
-          <h4 class="item__title">Magret de canard</h4>
-          <p class="item__description">Et parmentier de pommes de terres</p>
+          <header> 
+            <h4 class="item__title">Magret de canard</h4>
+            <p class="item__description">Et parmentier de pommes de terres</p>
+          </header> 
           <span class="item__price">35€</span>
           <i class="fas fa-check"></i>
         </article>
       
         <article class="item delay-5">
-          <h4 class="item__title">Pigeonneau d'Ille-et-Vilaine</h4>
-          <p class="item__description">Sur son lit de gnocchis aux légumes</p>
+          <header> 
+            <h4 class="item__title">Pigeonneau d'Ille-et-Vilaine</h4>
+            <p class="item__description">Sur son lit de gnocchis aux légumes</p>
+          </header> 
           <span class="item__price">44€</span>
           <i class="fas fa-check"></i>
         </article>
@@ -79,29 +94,37 @@
       <section class="step">
         <h3>Desserts</h3>
         <article class="item delay-6">
-          <h4 class="item__title">Pétales de violettes glacés</h4>
-          <p class="item__description">Et purée de noisettes</p>
+          <header> 
+            <h4 class="item__title">Pétales de violettes glacés</h4>
+            <p class="item__description">Et purée de noisettes</p>
+          </header> 
           <span class="item__price">18€</span>
           <i class="fas fa-check"></i>
         </article>
       
         <article class="item delay-7">
-          <h4 class="item__title">Fondant au chocolat</h4>
-          <p class="item__description">Revisité</p>
+          <header> 
+            <h4 class="item__title">Fondant au chocolat</h4>
+            <p class="item__description">Revisité</p>
+          </header> 
           <span class="item__price">22€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-7">
-          <h4 class="item__title">Millefeuille croustillant</h4>
-          <p class="item__description">Myrtilles et pâtes d'amande</p>
+          <header> 
+            <h4 class="item__title">Millefeuille croustillant</h4>
+            <p class="item__description">Myrtilles et pâtes d'amande</p>
+          </header> 
           <span class="item__price">23€</span>
           <i class="fas fa-check"></i>
         </article>
       </section>
     </div>
 
-    <button class="commandBtn">Commander</button>
+    <div class="wrapBtn">
+      <button class="commandBtn">Commander</button>
+    </div>
 
   </main>
 

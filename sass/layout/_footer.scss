@@ -1,0 +1,25 @@
+.footer {
+  padding: 1.5rem;
+  color: white;
+  background-color: lighten(black,20);
+  text-decoration: none;
+  list-style: none;
+
+  &__logo {
+    font-family: shrikhand;
+  }
+
+  &__list {
+    list-style: none;
+    color: inherit;
+
+    a {
+      color: white;
+
+      i {
+        padding-right: 1rem;
+         width: 1rem;
+      }
+    }
+  }
+}

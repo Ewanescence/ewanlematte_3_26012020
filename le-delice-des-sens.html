@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   
   <!-- Primary Meta Tags -->
   <title>Restaurant "Le délice des sens" - ohmyfood!</title>
@@ -12,7 +15,7 @@
 
 </head>
 <body>
-  <header class="header header--withBackArrow">
+  <header class="header">
     <div class="restaurantContainer">
       <a href="index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
       <h1>Ohmyfood</h1>
@@ -21,7 +24,7 @@
 
   <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant le délice des sens" class="introImg">
 
-  <main class="menu container">
+  <main class="menu">
     <header class="menu__header">
       <h2 class="menu__title">Le délice des sens</h2>
       <i class="menu__like far fa-heart fa-2x"></i>
@@ -31,22 +34,28 @@
       <section class="step">
         <h3>Entrées</h3>
         <article class="item delay-0">
-          <h4 class="item__title">Tartares de thon</h4>
-          <p class="item__description">Assaisonné au yuzu</p>
+          <header> 
+            <h4 class="item__title">Tartares de thon</h4>
+            <p class="item__description">Assaisonné au yuzu</p>
+          </header>
           <span class="item__price">25€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-1">
-          <h4 class="item__title">Bouchée de homard croustillant</h4>
-          <p class="item__description">Et sa farandole de petits légumes</p>
+          <header> 
+            <h4 class="item__title">Bouchée de homard croustillant</h4>
+            <p class="item__description">Et sa farandole de petits légumes</p>
+          </header>
           <span class="item__price">35€</span>
           <i class="fas fa-check"></i>
         </article>
         
         <article class="item delay-2">
-          <h4 class="item__title">Velouté de cèpes</h4>
-          <p class="item__description">Aux truffes</p>
+          <header> 
+            <h4 class="item__title">Velouté de cèpes</h4>
+            <p class="item__description">Aux truffes</p>
+          </header>
           <span class="item__price">20€</span>
           <i class="fas fa-check"></i>
         </article>
@@ -55,22 +64,28 @@
       <section class="step">
         <h3>Plats</h3>
         <article class="item delay-3">
-          <h4 class="item__title">Poulet rôti aux herbes de provences</h4>
-          <p class="item__description">Et sa crème de truffe</p>
+          <header> 
+            <h4 class="item__title">Poulet rôti aux herbes de provences</h4>
+            <p class="item__description">Et sa crème de truffe</p>
+          </header>
           <span class="item__price">40€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-4">
-          <h4 class="item__title">Langouste rôtie</h4>
-          <p class="item__description">Et ses légumes de saison</p>
+          <header> 
+            <h4 class="item__title">Langouste rôtie</h4>
+            <p class="item__description">Et ses légumes de saison</p>
+          </header>
           <span class="item__price">35€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-5">
-          <h4 class="item__title">Côte de boeuf angus</h4>
-          <p class="item__description">Et sa purée de panais</p>
+          <header> 
+            <h4 class="item__title">Côte de boeuf angus</h4>
+            <p class="item__description">Et sa purée de panais</p>
+          </header>
           <span class="item__price">44€</span>
           <i class="fas fa-check"></i>
         </article>
@@ -79,29 +94,37 @@
       <section class="step">
         <h3>Desserts</h3>
         <article class="item delay-6">
-          <h4 class="item__title">Farandole de desserts</h4>
-          <p class="item__description">Du chef</p>
+          <header> 
+            <h4 class="item__title">Farandole de desserts</h4>
+            <p class="item__description">Du chef</p>
+          </header>
           <span class="item__price">18€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-7">
-          <h4 class="item__title">Crème brulée</h4>
-          <p class="item__description">Revisitée</p>
+          <header> 
+            <h4 class="item__title">Crème brulée</h4>
+            <p class="item__description">Revisitée</p>
+          </header>
           <span class="item__price">22€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-8">
-          <h4 class="item__title">Tiramisu</h4>
-          <p class="item__description">A la noisette</p>
+          <header> 
+            <h4 class="item__title">Tiramisu</h4>
+            <p class="item__description">A la noisette</p>
+          </header>
           <span class="item__price">23€</span>
           <i class="fas fa-check"></i>
         </article>
       </section>
     </div>
 
-    <button class="commandBtn">Commander</button>
+    <div class="wrapBtn">
+      <button class="commandBtn">Commander</button>
+    </div>
 
   </main>
 

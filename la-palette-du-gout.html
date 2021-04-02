@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   
   <!-- Primary Meta Tags -->
   <title>Restaurant "La palette du goût" - ohmyfood!</title>
@@ -13,7 +16,7 @@
 
 </head>
 <body>
-  <header class="header header--withBackArrow">
+  <header class="header">
     <div class="restaurantContainer">
       <a href="index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
       <h1>Ohmyfood</h1>
@@ -22,7 +25,7 @@
 
   <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût" class="introImg">
 
-  <main class="menu container">
+  <main class="menu">
     <header class="menu__header">
       <h2 class="menu__title">La palette du goût</h2>
       <i class="menu__like far fa-heart fa-2x"></i>
@@ -32,22 +35,28 @@
       <section class="step">
         <h3>Entrées</h3>
         <article class="item delay-0">
-          <h4 class="item__title">Fricassée d'escargot</h4>
-          <p class="item__description">Au piment d'espelette</p>
+          <header>
+            <h4 class="item__title">Fricassée d'escargot</h4>
+            <p class="item__description">Au piment d'espelette</p>
+          </header>
           <span class="item__price">25€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-1">
-          <h4 class="item__title">Foie gras de canard mi-cuit</h4>
-          <p class="item__description">Et ses copeaux de truffe noire</p>
+          <header>
+            <h4 class="item__title">Foie gras de canard mi-cuit</h4>
+            <p class="item__description">Et ses copeaux de truffe noire</p>
+          </header>
           <span class="item__price">35€</span>
           <i class="fas fa-check"></i>
         </article>
   
         <article class="item delay-2">
-          <h4 class="item__title">Oeuf au plat</h4>
-          <p class="item__description">Assaisonné à la truffe sur lit de poireaux</p>
+          <header>
+            <h4 class="item__title">Oeuf au plat</h4>
+            <p class="item__description">Assaisonné à la truffe sur lit de poireaux</p>
+          </header>
           <span class="item__price">20€</span>
           <i class="fas fa-check"></i>
         </article>
@@ -56,22 +65,28 @@
       <section class="step">
         <h3>Plats</h3>
         <article class="item delay-3">
-          <h4 class="item__title">Filet de boeuf aux herbes</h4>
-          <p class="item__description">Accompagné de sa ribambelle de légumes</p>
+          <header>
+            <h4 class="item__title">Filet de boeuf aux herbes</h4>
+            <p class="item__description">Accompagné de sa ribambelle de légumes</p>
+          </header>
           <span class="item__price">40€</span>
           <i class="fas fa-check"></i>
         </article>
         
         <article class="item delay-4">
-          <h4 class="item__title">Parmentier de queue de boeuf</h4>
-          <p class="item__description">A la truffe noire sur sa purée de panais</p>
+          <header>
+            <h4 class="item__title">Parmentier de queue de boeuf</h4>
+            <p class="item__description">A la truffe noire sur sa purée de panais</p>
+          </header>
           <span class="item__price">35€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-5">
-          <h4 class="item__title">Filet de Turbot</h4>
-          <p class="item__description">Aux agrumes</p>
+          <header>
+            <h4 class="item__title">Filet de Turbot</h4>
+            <p class="item__description">Aux agrumes</p>
+          </header>
           <span class="item__price">44€</span>
           <i class="fas fa-check"></i>
         </article>
@@ -80,29 +95,37 @@
       <section class="step">
         <h3>Desserts</h3>
         <article class="item delay-6">
-          <h4 class="item__title">Paris-Brest</h4>
-          <p class="item__description">Revisité</p>
+          <header>
+            <h4 class="item__title">Paris-Brest</h4>
+            <p class="item__description">Revisité</p>
+          </header>
           <span class="item__price">18€</span>
           <i class="fas fa-check"></i>
         </article>
 
         <article class="item delay-7">
-          <h4 class="item__title">Macaron au chocolat d'exception</h4>
-          <p class="item__description">Et glace à la vanille de Madagascar</p>
+          <header>
+            <h4 class="item__title">Macaron au chocolat d'exception</h4>
+            <p class="item__description">Et glace à la vanille de Madagascar</p>
+          </header>
           <span class="item__price">22€</span>
           <i class="fas fa-check"></i>
         </article>
         
         <article class="item delay-8">
-          <h4 class="item__title">Mousse au chocolat</h4>
-          <p class="item__description">Au piment d'espelette et à la truffe noire</p>
+          <header>
+            <h4 class="item__title">Mousse au chocolat</h4>
+            <p class="item__description">Au piment d'espelette et à la truffe noire</p>
+          </header>
           <span class="item__price">23€</span>
           <i class="fas fa-check"></i>
         </article>
       </section>
     </div>
-
-    <button class="commandBtn">Commander</button>
+    
+    <div class="wrapBtn">
+      <button class="commandBtn">Commander</button>
+    </div>
 
   </main>
 

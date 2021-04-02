@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+}
+
+ol, ul {
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+h1 {
+  font-family: shrikhand;
+  text-align: center;
+}
+
+h2, h3, h4, p, a, span {
+  font-family: roboto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.intro__btn {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  padding: 1.25rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+.commandBtn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+
+.header {
+  padding: 1rem;
+  position: relative;
+}
+.header h1 {
+  margin: auto;
+}
+
+.restaurantContainer {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  padding: 1.5rem;
+  color: white;
+  background-color: #333333;
+  text-decoration: none;
+  list-style: none;
+}
+.footer__logo {
+  font-family: shrikhand;
+}
+.footer__list {
+  list-style: none;
+  color: inherit;
+}
+.footer__list a {
+  color: white;
+}
+.footer__list a i {
+  padding-right: 1rem;
+  width: 1rem;
+}
+
+/*  ___       _             
+  |_ _|_ __ | |_ _ __ ___  
+   | || '_ \| __| '__/ _ \ 
+   | || | | | |_| | | (_) |
+  |___|_| |_|\__|_|  \___/ 
+*/
+.intro {
+  background-color: #f6f6f6;
+  padding: 2rem;
+  text-align: center;
+}
+.intro__title {
+  font-family: roboto;
+}
+.intro__subtitle {
+  margin-top: 1rem;
+  font-style: normal;
+}
+.intro__container {
+  margin: 3rem auto;
+}
+
+/* _     ___   ____    _    _     
+  | |   / _ \ / ___|  / \  | |    
+  | |  | | | | |     / _ \ | |    
+  | |__| |_| | |___ / ___ \| |___ 
+  |_____\___/ \____/_/   \_\_____|
+*/
+.local {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 1rem 0;
+}
+.local__text {
+  margin-left: 1.25rem;
+  font-weight: bold;
+}
+.local__icon {
+  margin-left: -1.5rem;
+  margin-top: 2px;
+}
+
+/* ____  _____ ____ _____  _   _   _ ____      _    _   _ _____ ____  
+  |  _ \| ____/ ___|_   _|/ \ | | | |  _ \    / \  | \ | |_   _/ ___| 
+  | |_) |  _| \___ \ | | / _ \| | | | |_) |  / _ \ |  \| | | | \___ \ 
+  |  _ <| |___ ___) || |/ ___ \ |_| |  _ <  / ___ \| |\  | | |  ___) |
+  |_| \_\_____|____/ |_/_/   \_\___/|_| \_\/_/   \_\_| \_| |_| |____/ 
+*/
+.restaurants {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding-left: 1.5rem;
+  background-color: #eaeaea;
+  padding: 3rem 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card img {
+  height: 12rem;
+  width: 100%;
+  border: 0 solid transparent;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+.card__badge {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+.card__footer {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card__content {
+  flex: 1;
+}
+
+/* _____ _   _ _____ ___  
+  |_   _| | | |_   _/ _ \ 
+    | | | | | | | || | | |
+    | | | |_| | | || |_| |
+    |_|  \___/  |_| \___/ 
+*/
+.tuto {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  align-self: center;
+  margin: 3rem 2rem;
+  row-gap: 1.5rem;
+}
+.tuto__title {
+  grid-row: 1;
+}
+.tuto__steps {
+  grid-row: 2;
+  display: grid;
+  list-style: none;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1.25rem;
+}
+.tuto__steps li {
+  padding: 1.5rem;
+  background-color: #eaeaea;
+  border-radius: 1.25rem;
+  box-shadow: 0px 5px 5px #d1d1d1;
+}
+.tuto__steps li i {
+  color: #4d4d4d;
+  width: 1rem;
+  margin-left: 1rem;
+}
+.tuto__text {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+.tuto__number {
+  margin-left: -2.15rem;
+  padding: 0.5rem;
+  background-color: #9356DC;
+  border-radius: 100%;
+  color: white;
+}
+
+.introImg {
+  max-height: 32rem;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+  max-width: 1280px;
+  margin: -4rem auto 0 auto;
+  padding: 2rem;
+}
+.menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__title {
+  font-family: shrikhand, cursive;
+}
+
+.steps-wrapper {
+  display: grid;
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step h3 {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.step h3::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.item {
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+}
+.item header {
+  flex: 1;
+}
+.item i {
+  display: none;
+}
+.item__price {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+
+.wrapBtn {
+  text-align: center;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
