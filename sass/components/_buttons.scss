@@ -40,9 +40,6 @@
  /* mix-blend-mode: lighten;
   background-color: white;*/
 
-  &::before {
-  }
-
   &--bg  {
     opacity: 0;
     color: linear-gradient(0deg,$colour-primary,$colour-secondary);
