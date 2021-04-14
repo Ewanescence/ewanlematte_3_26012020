@@ -179,3 +179,73 @@
     color: white;
   }
 }
+
+/* _     ___    _    ____  _____ ____  
+  | |   / _ \  / \  |  _ \| ____|  _ \ 
+  | |  | | | |/ _ \ | | | |  _| | |_) |
+  | |__| |_| / ___ \| |_| | |___|  _ < 
+  |_____\___/_/   \_\____/|_____|_| \_\
+*/
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsla(0,0%,100%,.9);
+  animation: loader .01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+  }
+
+  &__item {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    animation: jump 1s;
+
+    &--1 {
+      background-color: $colour-primary;
+    }
+    &--2 {
+      background-color: $colour-secondary;
+      animation-delay: .25s;
+    }
+    &--3 {
+      background-color: $colour-tertiary;
+      animation-delay: .5s;
+    }
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(.5rem);
+  }
+  75% {
+    transform: translateY(-.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
