@@ -10,6 +10,11 @@ figure {
   margin: 0;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 2rem auto;
+}
+
 h1, h2, h3, h4, p {
   margin: 0;
 }
@@ -79,6 +84,10 @@ a {
 
 .card__like {
   background-color: #fff !important;
+}
+
+.header__arrow {
+  color: black;
 }
 
 .header {
@@ -170,7 +179,7 @@ a {
   grid-template-rows: auto 1fr;
   padding-left: 1.5rem;
   background-color: #eaeaea;
-  padding: 3rem 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .cards {
@@ -178,6 +187,13 @@ a {
   grid-template-rows: repeat(3, 1fr);
   row-gap: 2rem;
   margin-top: 2rem;
+}
+@media (min-width: 48rem) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+  }
 }
 
 .card {
@@ -225,8 +241,9 @@ a {
   display: grid;
   grid-template-rows: repeat(2, auto);
   align-self: center;
-  margin: 3rem 2rem;
+  margin: 3rem auto;
   row-gap: 1.5rem;
+  padding: 0 1.5rem;
 }
 .tuto__title {
   grid-row: 1;
@@ -237,6 +254,16 @@ a {
   list-style: none;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 1.25rem;
+}
+@media (min-width: 48rem) {
+  .tuto__steps {
+    grid-row: 2;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    column-gap: 2rem;
+  }
 }
 .tuto__steps li {
   padding: 1.5rem;
@@ -291,6 +318,12 @@ a {
   row-gap: 2rem;
   margin-top: 2rem;
 }
+@media (min-width: 60rem) {
+  .steps-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
 
 .step h3 {
   text-transform: uppercase;
@@ -310,28 +343,74 @@ a {
 }
 
 .item {
-  background-color: white;
-  border-radius: 1.25rem;
+  background-color: #fff;
   padding: 1rem;
-  margin: 1rem 0;
   display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
   animation: itemAppear 0.6s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
-  cursor: pointer;
+  transform: scale(0);
+  max-width: 100%;
 }
-.item header {
+.item__header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   flex: 1;
 }
-.item i {
-  display: none;
+.item__title {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item__description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .item__price {
-  font-weight: 700;
+  font-weight: bold;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
+  margin-right: 2rem;
+}
+.item__confirmation {
+  background-color: #99E2D0;
+  margin: -1rem -5rem -1rem -1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.item__wrapIcon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.item__icon {
+  color: #99E2D0;
+}
+.item:hover .item__confirmation {
+  margin-right: -1rem;
+}
+.item:hover .item__wrapIcon {
+  transform: rotate(0);
 }
 
 .wrapBtn {
@@ -339,6 +418,12 @@ a {
   padding: 2rem;
 }
 
+/* ____  ____   ___   ____ ____  _____ ____ ____ _____     _______ 
+  |  _ \|  _ \ / _ \ / ___|  _ \| ____/ ___/ ___|_ _\ \   / / ____|
+  | |_) | |_) | | | | |  _| |_) |  _| \___ \___ \| | \ \ / /|  _|  
+  |  __/|  _ <| |_| | |_| |  _ <| |___ ___) |__) | |  \ V / | |___ 
+  |_|   |_| \_\\___/ \____|_| \_\_____|____/____/___|  \_/  |_____|
+*/
 .delay--0 {
   animation-delay: 0s;
 }
