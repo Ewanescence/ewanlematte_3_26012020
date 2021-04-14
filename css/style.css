@@ -425,14 +425,7 @@ a {
   width: 140px;
   flex: 1;
 }
-.item__title {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.item__description {
-  margin: 0;
+.item__title, .item__description {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
